@@ -6,12 +6,13 @@ To use the reference udf:
 
 2) ADD JAR path/reference.jar;
 
-3) LIST JARS; //verify all the jar is there
+3) ADD FILE reference_file.txt;
 
-4) ADD FILE reference_file.txt;
+4) LIST JARS; //verify that the jar is there
 
-5) CREATE TEMPORARY FUNCTION reference AS 'pkg.UDFReference'; 
+5) LIST FILES; //verify that the reference file is there
 
+6) CREATE TEMPORARY FUNCTION reference AS 'pkg.UDFReference'; 
 
 Then use the udf inside hive passing the file added to the hadoop distributed cache as second argument.
 
