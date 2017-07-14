@@ -46,11 +46,11 @@ public class UDF_reference extends UDF {
             }
             br.close();
         } catch (FileNotFoundException e) {
-            throw new HiveException("The file " + file + " doesn't exist");
+            throw new HiveException("THE FILE " + file + " DOESN'T EXIST");
         } catch (IOException e) {
-            throw new HiveException("process file " + file + " failed, please check format");
+            throw new HiveException("PROCESS FILE " + file + " FAILED, PLEASE CHECK FORMAT");
         } catch (Exception e) {
-            System.out.println("ERROR READING THE FILE: " + file + " EXCEPTION: " + e.getMessage());
+            System.out.println("EXCEPTION: " + e.getMessage());
             System.out.println("STACKTRACE: ");
             e.printStackTrace();
         }
