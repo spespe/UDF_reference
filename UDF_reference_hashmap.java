@@ -12,7 +12,7 @@ import org.apache.hadoop.hive.ql.metadata.HiveException;
 import static java.lang.String.valueOf;
 
 /**
- * Created by Pietro Speri. Description: Return true if the first
+ * Created by Pietro Speri. Description: It returns true if the first
  * string is matching one element present in the file located in the path
  * specified as second argument.
  */
