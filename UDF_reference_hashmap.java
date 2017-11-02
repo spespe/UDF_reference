@@ -18,7 +18,7 @@ import static java.lang.String.valueOf;
  */
 
 @Description(name = "UDF_reference", value = "_FUNC_(string,string) - Return true "
-        + "if the first string is matching one element present in a file as second argument.")
+        + "if the first string is matching one element present in the file located in the path specified as second argument.")
 public class UDF_reference extends UDF {
     protected HashMap<String, String> hshmp;
 
@@ -48,7 +48,7 @@ public class UDF_reference extends UDF {
         } catch (FileNotFoundException e) {
             throw new HiveException("THE FILE " + file + " DOESN'T EXIST");
         } catch (IOException e) {
-            throw new HiveException("PROCESS FILE " + file + " FAILED, PLEASE CHECK FORMAT");
+            throw new HiveException("PROCESS FILE " + file + " FAILED, PLEASE CHECK THE FORMAT");
         } catch (Exception e) {
             System.out.println("EXCEPTION: " + e.getMessage());
             System.out.println("STACKTRACE: ");
