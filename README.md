@@ -8,9 +8,9 @@ To use the reference udf:
 
 3) ADD FILE reference_file.txt;
 
-4) LIST JARS; //verify that the jar is there
+4) LIST JARS; //verify the jar
 
-5) LIST FILES; //verify that the reference file is there
+5) LIST FILES; //verify the reference file
 
 6) CREATE TEMPORARY FUNCTION reference AS 'pkg.UDFReference'; 
 
