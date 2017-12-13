@@ -13,12 +13,12 @@ import static java.lang.String.valueOf;
 
 /**
  * Created by Pietro Speri. Description: It returns true if the first
- * string is matching one element present in the file located in the path
+ * string matches one element present in the file located in the path
  * specified as second argument.
  */
 
 @Description(name = "UDF_reference", value = "_FUNC_(string,string) - Return true "
-        + "if the first string is matching one element present in the file located in the path specified as second argument.")
+        + "if the first string matches one element present in the file located in the path specified as second argument.")
 public class UDF_reference extends UDF {
     protected HashMap<String, String> hshmp;
 
